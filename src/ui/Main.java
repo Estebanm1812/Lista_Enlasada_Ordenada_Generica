@@ -87,7 +87,7 @@ public class Main {
 			Tema<Integer> tmp = current;
 			current = toAdd;
 			current.setNext(tmp);
-			System.out.println(current.getNumber() + " " + tmp.getNumber());
+			
 			
 		}else {
 			
@@ -108,7 +108,7 @@ public class Main {
 		if(first == null) {
 			list = "No se han añadido elementos a la lista"; 
 		}else {
-			System.out.println("Entra");
+			
 			Tema<Integer> tmp = first.getNext();
 			
 			list = first.getNumber().toString();
@@ -118,14 +118,7 @@ public class Main {
 				System.out.println("Entra 2 con valor de: " + tmp.getNumber());
 			
 			while(tmp!=null) {
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			System.out.println("Entra a hacer el string y añade: " + tmp.getNumber());
-			
+						
 			list+= ", " + tmp.getNumber().toString();
 			
 			Tema<Integer> tmp2 = tmp;
