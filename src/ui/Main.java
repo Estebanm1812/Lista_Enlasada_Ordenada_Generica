@@ -72,7 +72,7 @@ public class Main {
 				first.setNext(tmp);
 			}else {
 				
-				AddTema(toAdd, first.getNext());				
+				AddTema(toAdd, first);				
 			}
 			
 		}
